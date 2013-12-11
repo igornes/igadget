@@ -325,3 +325,4 @@
   }
   $inferred_content_type
 }
+@import ig_functions.ts

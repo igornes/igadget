@@ -14,9 +14,9 @@ match(inferred_content_type()) {
 
     replace(/fbn_/, "fb:") # Rewrite the xmlns facebook nodes to restore them
   }
-  # with(/javascript/) {
-  #   @import ajax.ts
-  # }
+  with(/javascript/) {
+  @import ajax.ts
+  }
   else() {
     log("Passing through " + $content_type + " unmodified.")
   }

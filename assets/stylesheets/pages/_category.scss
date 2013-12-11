@@ -1,0 +1,43 @@
+
+
+.mw_category {	
+		
+	
+		.mw_bar1 {
+			border: 1px solid $color1;
+			display: inline-block;
+			width: 100%;
+			padding-top: 2px;
+			padding-bottom: auto;
+
+			background-color: #852201;
+     		height: auto;
+		    margin-top: 3px;
+		  //  margin-right: 10px;
+		    text-indent: 10px;
+
+		   font-size: 16px;
+		    color: white;
+			.mw_indicator {
+			//display: inline-block;
+			float:right;
+			margin: 10px;
+			//color: white;
+			}
+			&[data-ur-state="disabled"] {
+				> .mw_indicator {
+					@extend .sprites-plus;
+				}
+			}
+			&[data-ur-state="enabled"] {
+				> .mw_indicator {
+					@extend .sprites-minus;
+				}
+			}
+	}
+	.mw_arrow {
+		 @include sprites-menu_go;
+		 
+	 	float:right;
+	}
+}
