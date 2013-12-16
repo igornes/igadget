@@ -139,7 +139,8 @@ hr {
       }
     }
     .Content{
-      background: image-url("content_top.png") repeat-x 0 0;
+      //background: image-url("content_top.png") repeat-x 0 0;
+      background: $background4;
       @include clearfix();
       padding: 15px 10px;
       h3 {

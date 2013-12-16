@@ -1,11 +1,12 @@
  $('./body') {
 	remove("//*[@id='AjaxLoading']")
-	#$("//div") { log("--------> My index " + index()) }
+	
 
 	$(".//div[@id='Header']") {
 		attribute("data-ur-set", "toggler")
 		# Select logo scope
 		$("./div[@id='Logo']"){	
+				log("--------> selected the Logo containter")
 			# Move top menu into #Logo container
 				move_here("../../../div[@id='TopMenu']","bottom"){
 				# Remove unwanted top menu items from upper menu
@@ -33,7 +34,12 @@
 							wrap("div", class: "mw_search_btn sprites-search")
 						}
 						$("./input[@type='text']") {
+							wrap("div"){
+								attribute("data-ur-set", 'input-clear')
+							}
+							attribute("data-ur-input-clear-component", "input") 
 						 	attribute("placeholder", "Search...")
+						 	
 						}
 					}
 				}

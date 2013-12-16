@@ -6,12 +6,12 @@
   #Logo {
     @include clearfix();
     @include grad1;
-    #logo Container {
+    #LogoContainer {
+    float:left;
     h1 {
         margin-top: 10px;
         margin-left: 10px; 
         margin-bottom: 17px;
-        widht: 60%;
         a {
            @include mw_h1;
         }
@@ -21,7 +21,7 @@
     #TopMenu {
       ul {
         margin-top: 0px;
-        li{
+        li{ 
           float:right;
           margin-top: -1px;
           margin-right: 10px;
@@ -38,7 +38,7 @@
             @extend .sprites-cart;
             display: block;
             text-indent: -9999px;
-            span{
+            span {
               display: none;
             }
           }
@@ -73,6 +73,7 @@
             width: 100%;
             display: block;
           }
+          
           input[type='image']{
             width: 40px;
             height: 33px;
@@ -99,5 +100,50 @@
       }
     }
   }
+  #Menu {
+    ul {
+      padding: 2px 0 0;
+      background-color: #F5F2E1;
+      @include clearfix();
+      li {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #C0BCA3;
+        a {
+          display: block;
+          padding: 11px 10px 10px;
+          color: #3D211A;
+          text-shadow: 1px 1px 0px white;
+          background: image-url("sprites/menu_go.png") no-repeat 95% center;
+        }
+      }
+    }
+    #SideCategoryList{
+      h2{
+        background-color: #812600;
+        border-bottom: 1px solid #5A0D00;
+        border-top: 1px solid #5A0D00;
+        font-size: 15px;
+        padding: 11px 10px 10px;
+        margin: 0;
+        color: $background4;
+        text-shadow: 1px 1px 0px #411B07;
+      }
+      ul {
+        background-color: #F5F2E1;
+        a {
+          padding: 10px 10px 9px;
+        }
+      }
+    }
+  }
+  .Block {
+    margin-bottom: 0px;
+  }
+  .mw_search_btn {
+    .ex_button {
+      opacity: 0;
 
+    }
+  }
 }
