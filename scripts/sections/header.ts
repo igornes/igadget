@@ -33,14 +33,7 @@
 						$("./input[@type='image']") {
 							wrap("div", class: "mw_search_btn sprites-search")
 						}
-						$("./input[@type='text']") {
-							wrap("div"){
-								attribute("data-ur-set", 'input-clear')
-							}
-							attribute("data-ur-input-clear-component", "input") 
-						 	attribute("placeholder", "Search...")
-						 	
-						}
+
 					}
 				}
 			}		

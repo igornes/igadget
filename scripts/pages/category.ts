@@ -1,4 +1,4 @@
- $('./body') {
+ $("./body") {
  	add_class ("mw_category")
 	
 	$("./div[@id='Container']/div[@id='Outer']"){
